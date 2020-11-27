@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,900&display=swap');
+
+:root {
+    --Font-Montserrat:'Montserrat', sans-serif;
+}
+
+/* Initial var */
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: var(--Font-Montserrat);
+}
+.Wrapper {
+    width: 100%;
+    height: 100vh;
+   
+    
+}
+/* 
+Header Section in Top
+
+*/
+.Header {
+    padding-top: 30px;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Header .Logo  {
+    
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+.Header .Logo p  {
+    color: orange;
+    margin-right: 20px;
+    display: inline;
+}
+
+
+.Header .NavBar {
+   align-self: flex-start;
+   
+}
+
+.Header .NavBar ul {
+  list-style: none; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.Header .NavBar ul li a  {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 10px;
+    color: black;
+}
+.Header .NavBar ul li:hover  a
+{
+    color: green;
+    opacity: 0.6;
+}
+
+.Header .Search_Icon i ,.Header .Shoppin_icon i {
+    font-size:30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.Header .Shoppin_icon  i:hover, .Header .Search_Icon   i:hover{
+    color: green;
+    opacity: 0.6;
+}
+
+.Header  .Account {
+   font-weight: 600;
+}
+/* 
+
+Section For Contents
+
+                  is First Section in Html
+
+*/
+
+.Content {
+   
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center ;
+}
+
+.Content .Find_juice {
+    display: flex;
+    justify-content: space-between;
+   
+    width: 100%;
+    align-items: center;
+
+}
+
+.Content .Find_juice p{
+ color: gray;
+ opacity: 0.8;
+ font-size:30px;
+ 
+}
+.Content .Find_juice .pages p   {
+     color: black;
+     opacity: 1;
+     font-weight: 800;
+     font-size: 3rem !important;
+    
+}
+
+.Content .Find_juice .pages span {
+    color: gray;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    font-weight: 200;
+} 
+
+.Content .Captoin_Big {
+     text-align: center;
+     width: 100%;
+     font-size: 10rem;
+     text-transform: uppercase;
+     font-weight: 800;
+     padding: 30px 0;
+    
+    
+}
+
+.Content .Info_text {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Content .Info_text  .text_Content {
+   
+    width: 300px;
+    
+}
+
+.Content .Info_text  .text_Content h4 {
+    font-weight: 200;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+   
+}
+
+.Content .Info_text  .text_Content span {
+    color: green;
+    font-weight: 600;
+} 
+.Content .Info_text   p  {
+    font-size: 20px;
+    opacity: 0.7 !importantp;
+
+}
+
+
+.juice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 111;
+    animation:  bouncing 3s ease-in-out infinite;
+}
+
+.juice img {
+    max-height: 600px;
+    margin: 0 auto;
+    
+}
+.leaves_Section ul {
+   list-style: none;
+}
+.leaves_Section {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+   
+   
+}
+.leaves  {
+   
+}
+.leaves_Section .leaves:nth-child(1) {
+    top: -100px !important;
+    left: 50% !important;
+   
+}
+.leaves_Section .leaves:nth-child(2) {
+    left:65% !important;
+    top: 100% !important;  
+}
+.leaves_Section .leaves:nth-child(3) {
+   
+    left: 100px !important;
+    top: 400px !important;
+  
+    
+}
+.leaves_Section .leaves:nth-child(4) {
+    
+    left: 600px !important;
+    top:300px !important;
+  
+    
+}
+.leaves_Section .leaves:nth-child(5) {
+   
+    left: 20% !important;
+    top: 200% !important;
+  
+    
+}
+
+
+.owl-carousel {
+   
+    width: 100%;
+    height: 100vh;
+}
+.item {
+    width: 100% !important;
+    height: 100vh !important;
+    
+}
+.owl-prev {
+    position: absolute;
+    top: 50% ;
+    right: 0;
+    color: 0 !important;
+    font-size: 5rem !important;
+}
+@keyframes bouncing {
+     0% {
+         transform: translate(-50%,-46%);
+     }
+     50% {
+        transform: translate(-50%,-54%);
+    }
+   100% {
+        transform: translate(-50%,-46%);
+    }
+}
